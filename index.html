@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLOBALE- Entregas Rápidas e Sustentáveis</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Você pode criar um arquivo styles.css para estilizar a página -->
+    <style>
+        /* Adicione estilos conforme necessário */
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>GLOBALE</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showContent('services')">Serviços</a></li>
+                <li><a href="#" onclick="showContent('about')">Sobre</a></li>
+                <li><a href="#" onclick="showContent('contact')">Contato</a></li>
+            </ul>
+        </nav>
+       
+        
+    </header>
+    
+    <main>
+        <section id="services" class="hidden">
+            <h2>Nossos Serviços</h2>
+            <p>A GLOBALE oferece soluções de entrega rápida e sustentável para os seus produtos.</p>
+            <div class="service">
+                <h3>Entrega Rápida</h3>
+                <p>Entregamos seus produtos de forma ágil e eficiente.</p>
+            </div>
+            <div class="service">
+                <h3>Entrega Sustentável</h3>
+                <p>Nossos serviços são pensados para minimizar o impacto no meio ambiente.</p>
+            </div>
+        </section>
+
+        <section id="about" class="hidden">
+            <h2>Sobre a GLOBALE</h2>
+            <p>A GLOBALE é uma empresa dedicada a fornecer soluções de entrega rápidas e sustentáveis, contribuindo para um mundo melhor.</p>
+        </section>
+       
+
+        <section id="contact" class="hidden">
+            <h2>Entre em Contato</h2>
+            <p>Para mais informações sobre nossos serviços, entre em contato conosco:</p>
+            <form action="submit.php" method="post">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <div class="container">
+        <div class="ball"></div>
+        
+        <h4>GLOBALE</h4>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Eco-Fast. Todos os direitos reservados.</p>
+    </footer>
+
+    
+
+   <script src="script.js"></script>
+</body>
+</html>
+
